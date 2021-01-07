@@ -1,13 +1,13 @@
+import React from 'react'
+import Header from './Header'
+import NavMenu from './NavMenu'
+import MainMenu1 from './MainMenu1'
+import Footer from './Footer'
 
-Stow Maries Aerodrome Museum
-Home
-Contact Page
-About Us
-Events Page
-Booking
-More
-Welcome to Great War Airdrome Museum
-Copyright © 2019 Great War
- Museum - All Rights Reserved.
+const Home = () => (
+	<div>
+		<Footer />
+	</div>
+)
 
-Privacy Policy
+export default Home

@@ -3,9 +3,15 @@ import { Switch, Route } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import { render } from 'react-dom'
 import AppBar from '@material-ui/core/AppBar'
+import Button from '@material-ui/core/Button'
+import Carousel from 'react-material-ui-carousel'
 import Grid from '@material-ui/core/Grid'
 import GridList from '@material-ui/core/GridList'
 import Header from './Header'
+import Beaver from './images/Beaver.JPG'
+import Goldcrest from './images/Goldcrest_Stretton.JPG'
+import Hare from  './images/Hare (taken by Denis Stretton).jpg'
+import Owl from './images/Owl.JPG'
 import MenuItem from '@material-ui/core/MenuItem'
 import MenuList from '@material-ui/core/MenuList'
 import Table from '@material-ui/core/Table'
@@ -110,24 +116,94 @@ const styles = {
 		width: 'inherit',
 	},
 };	
-	
-export default function History(withStyles)
-{
-	return(
-		<div id="history">
-			<Header />
-			<h1>History</h1>
-			<p>image209</p>
-			<p>There's much to see here. So, take your time, look around, and learn all there is to know about us. We hope you enjoy our site and take a moment to drop us a line.</p>
-			<br />
-			<h1>Aerodrome Past History</h1>
-			<h2>About the Past</h2>
-			<p>image128</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae et leo duis ut diam quam nulla porttitor. Euismod quis viverra nibh cras pulvinar mattis nunc. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Sollicitudin ac orci phasellus egestas tellus rutrum tellus.</p> 
-			<p>Quis risus sed vulputate odio ut enim blandit volutpat. Leo duis ut diam quam nulla porttitor massa id neque. Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Purus in mollis nunc sed id semper risus. Nunc mattis enim ut tellus. Amet risus nullam eget felis eget nunc lobortis mattis. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Consectetur purus ut faucibus pulvinar elementum. Et malesuada fames ac turpis egestas integer.</p> 
 
-			<p>image811</p>
+function Image(props)
+{
+	var items = [
+		{ 	
+			src: "Beaver.JPG",
+			width: "300",
+			height: "300",
+			name: "Beaver",
+			description: "Picture of Beaver"
+		},
+		{ 
+			src: "Goldcrest_Stretton.JPG",
+			width: "300",
+			height: "300",
+			name: "Goldcrest",
+			description: "Picture of Goldcrest"
+		},
+		{ 
+			src: "Beaver.JPG",
+			width: "300",
+			height: "300",
+			name: "Beaver",
+			description: "Picture of Beaver"
+		},
+		{ 
+		    src: "Hare (taken by Denis Stretton).jpg",
+			width: "300",
+			height: "300",
+			name: "Hare",
+			description: "Picture of Hare"
+		},
+		{ 
+			src: "Owl.JPG",
+			width: "300",
+			height: "300",
+			name: "Owl",
+			description: "Picture of Owl"
+		},
+		{ 
+			width: "300",
+			height: "300",
+			name: "image493",
+			description: "image489"
+		},
+		{ 
+			width: "300",
+			height: "300",
+			name: "image494",
+			description: "image489"
+		}
+	]
+	
+	return(
+		<div>
+			<Carousel>
+			{
+				items.map((item, i) => <Item key={i} item={item} />)
+			}
+			</Carousel>
+			<Paper>
+				
+				
+				<p>{props.item.name}</p>
+				<p>{props.item.description}</p>
+			</Paper>
+			<Button className="Button">
+				 Check!
+			</Button>
 		</div>
-	);
+	)
+	
 }
 
+function Imagecarousel(props)
+{	
+	//const {classes} = props;
+	return(
+		<div>
+			<h2>Photo Gallery</h2>
+			<p>{props.item.src}</p>
+			<p>image431image432image433image434image435image436image437</p>
+		</div>
+	)
+}
+
+Imagecarousel.propTypes = {
+	classes: PropTypes.object.isRequired,	
+};
+
+export default withStyles(styles)(Imagecarousel);

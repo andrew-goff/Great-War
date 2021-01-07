@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+  background-color: white;  /* can also set image etc if wanted */
+  font-family: Roboto, sans-serif;
+  font-size:small;
+  color:#002855;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+title {
+  font-size: 1.5em;
+  background-color: white;
+}
+
+.App-h1 {
+    padding: 0;
+    background-color: blue;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    text-indent: 0.1em;
+    color: red;
+    margin: .5em auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom:.5em auto;
+    margin-left: 0;
+    color: #666000;
+}
+
+.App-h2 {
+	text-align: left;
+    font-size: 24px;
+	font-weight: bolder;
+    text-indent: 1em;
+    font-family: Roboto, sans-serif;
+    color: red;
+    margin: 6px auto;
+}
+
+body {
+    background-color:#fff;
+    font-size:12px;
+    color:#002855;
+    text-align:left;
+    font-family:"Helvetica-neue", Helvetica, Ariel, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border-bottom: 0.1rem solid LightSkyBlue;
+  overflow: hidden;
+  padding: 0;
+  table-layout: fixed;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+}
+
+caption {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+div.fhead,
+thead {
+  background-color: #002855;
+  color: red;
+  font-weight: bold;
+  height: 3rem;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+Header-Root-6 {
+    color: #002855;
+    flex-grow: 1;
+    border-bottom: 0.1rem solid LightSkyBlue;
+    background-color: #2196f3;
+	font-family: Oswald;
+}
+
+div.form-head,
+tr.table-head {
+  font-weight: bold;
+  height: 1.5rem;
+  width: 100%;
+}
+
+th.table-heading {
+  height: 3rem;
+  margin: 1.5rem 0.2rem 0 0.5rem;
+  vertical-align: middle;
+}
+
+div.fhead > button.nav-button,
+div.form-heading-btn,
+th.table-heading-btn {
+  height: 3rem;
+  text-align: right;
+  vertical-align: middle;
+}
+
+div.form-btn {
+  border-right: 0.5rem;
+  height: 2.7rem;
+  padding-right: 0.5rem;
+  text-align: right;
+  vertical-align: top;
+}
+
+tbody {
+  display: block;
+  height: 11.8rem;
+  max-height: 11.8rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.3 em;
+  width: 100%;
+}
+
+TableBody {
+  display: block;
+  height: 11.8rem;
+  max-height: 11.8rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.3 em;
+  width: 100%;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
